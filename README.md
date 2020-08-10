@@ -1,6 +1,6 @@
 # SerenitySkins
 
-_**Serenity Sking Spa ** Serenity Skin Spa's websites allows customers to signup with a profile and manage their services and make appointments._
+_**Serenity Sking Spa ** Serenity Skin Spa is a where all your beauty dreams come true. We specialize in meical massages facials, botox and many other services ._
 
 
 <br>
@@ -28,6 +28,7 @@ _The **Serenity Skins Spa** This website allows users to sign up and manage appo
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
 |      React       | _Build encapsulated components that manage their own state._ |
+|      Axios      | _Promise-based HTTP client for Javascript._ |
 |   React Router   | _Collection of navigational components that compose declaratively with your application._ |
 | CSS | _Cascading Style Sheets is a style sheet language used for describing the presentation of a document._ |
 |     Ruby on Rails      | _Ruby on Rails, is a server-side web application framework._ |
@@ -106,10 +107,10 @@ src
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | Back-End    |    H     |     8 hrs      |     2 hrs     |    TBD    |
+| Back-End    |    H     |     8 hrs      |     2 hrs     |    TBD    |
 | CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
 | Front-End |    H     |     8 hrs      |     1 hrs     |     TBD     |
 | CSS |    H     |     5 hrs      |     1 hrs     |     TBD     |
-
 | TOTAL               |          |     24 hrs      |     3 hrs     |     TBD     |
 
 
