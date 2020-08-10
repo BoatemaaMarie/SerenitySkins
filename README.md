@@ -58,6 +58,14 @@ https://wireframe.cc/OqJUXd
 
 https://wireframe.cc/uEBxCX
 
+- Create Appointment
+
+https://wireframe.cc/yOq7cL
+
+- Update and Delete Appointment
+
+
+
 - Tablet Resource Index
 
 https://wireframe.cc/qF656C
