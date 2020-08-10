@@ -1,6 +1,6 @@
 # SerenitySkins
 
-_**Serenity Sking Spa ** Serenity Skin Spa is a where all your beauty dreams come true. We specialize in meical massages facials, botox and many other services ._
+_**Serenity Sking Spa ** Serenity Skin Spa is a where all your beauty dreams come to life. We specialize in meical massages facials, botox and many other services ._
 
 
 <br>
