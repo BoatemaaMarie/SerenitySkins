@@ -64,7 +64,7 @@ https://wireframe.cc/yOq7cL
 
 - Update and Delete Appointment
 
-
+https://wireframe.cc/F4i2Oq
 
 - Tablet Resource Index
 
