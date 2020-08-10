@@ -40,7 +40,6 @@ _The **Serenity Skins Spa** This website allows users to sign up and manage appo
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
 https://wireframe.cc/PUwm75
 
@@ -72,7 +71,6 @@ https://drive.google.com/file/d/1JqhojbjRlBkTxTHOlwnHUytFNUxsjRZl/view
 
 #### Component Hierarchy
 
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
 
 ``` structure
 
@@ -90,7 +88,6 @@ src
 
 #### Component Breakdown
 
-> Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
@@ -106,7 +103,6 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Back-End    |    H     |     8 hrs      |     2 hrs     |    TBD    |
 | Back-End    |    H     |     8 hrs      |     2 hrs     |    TBD    |
 | CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
 | Front-End |    H     |     8 hrs      |     1 hrs     |     TBD     |
