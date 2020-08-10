@@ -7,7 +7,6 @@ _**Serenity Sking Spa ** Serenity Skin Spa is a where all your beauty dreams com
 
 ## MVP
 
-
 _The **Serenity Skins Spa** This website allows users to sign up and manage appointments. Once they signup with their email they can add services this company provides. They will be able to create appoinments on whatever date they want. They will be able to delete, update and review the service they selected.._
 
 <br>
@@ -75,13 +74,22 @@ https://drive.google.com/file/d/1JqhojbjRlBkTxTHOlwnHUytFNUxsjRZl/view
 ``` structure
 
 src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
 |__ components/
-      |__ Header.jsx
+      |__ CreateAppointment
+      |__ DeleteAppointment  
+      |__ UpdateAppointment 
+      |__ ShowAppointment 
+      |__ ShowAppointments 
+      |__ ShowServices
+      |__ Main  
+      |__ Login
+      |__ Navigation Bar
+      |__ mockups
+|__ services/
+      |__ api-helper.js
+      |__ auth.js 
+      |__ appointment.js
+      |__ services.js 
 |__ services/
 
 ```
@@ -103,11 +111,16 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Back-End    |    H     |     8 hrs      |     2 hrs     |    TBD    |
-| CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Front-End |    H     |     8 hrs      |     1 hrs     |     TBD     |
-| CSS |    H     |     5 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     24 hrs      |     3 hrs     |     TBD     |
+| ReadMe    |    M     |     2 hrs      |     2 hrs     |    TBD    |
+| Schema   |    H     |     3 hrs      |     3 hrs     |    TBD    |
+| API|    H     |     5 hrs      |     5 hrs     |    TBD    |
+| Back-End CRUD functionality    |    H     |     2 hrs      |     2 hrs     |    TBD    |
+| Create all componets |    M     |     2 hrs      |     2 hrs     |     TBD     |
+| component functionality  |    H     |     7 hrs      |     7 hrs     |     TBD     |
+| CSS |    H     |     5 hrs      |     5 hrs     |     TBD     |
+| Review Function  |    M     |     3 hrs      |     3 hrs     |    TBD    |
+| Review CSS and responsiveness    |    M     |     3 hrs      |     3 hrs     |    TBD    |
+| TOTAL               |          |     31 hrs      |     3 hrs     |     TBD     |
 
 
 
