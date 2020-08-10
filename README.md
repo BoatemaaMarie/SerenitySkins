@@ -93,11 +93,11 @@ src
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
+|    Header    | functional |   n   |   n   | _The header will contain the name and logo._               |
 |  Navigation  | functional |   n   |   n   | _The navigation will provide a link to each of the pages._       |
 |   Gallery    |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
 | Gallery Card | functional |   n   |   y   | _The cards will render the post info via props._                 |
-|    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
+|    Footer    | functional |   n   |   n   | _The footer will show info about us and a link to FAQS._ |
 
 #### Time Estimates
 
@@ -105,11 +105,14 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Back-End    |    H     |     8 hrs      |     2 hrs     |    TBD    |
+| CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Front-End |    H     |     8 hrs      |     1 hrs     |     TBD     |
+| CSS |    H     |     5 hrs      |     1 hrs     |     TBD     |
 
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
+| TOTAL               |          |     24 hrs      |     3 hrs     |     TBD     |
+
+
 
 <br>
 
@@ -125,7 +128,7 @@ https://drive.google.com/file/d/1t1wmLFiidZLxloW2hx20aUWmXOqyuUwU/view
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+-For Post MVP I would like to add customer testimonials and pictures if available. I would like to link a instagram account to the website as well as other social media platforms.
 
 ***
 
