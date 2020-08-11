@@ -1,5 +1,7 @@
 class AppointmentsController < ApplicationController
   before_action :set_appointment, only: [:show, :update, :destroy]
+  before_action :authorize_request, only: [:create, :update, :destroy, :add_service]
+
 
   # GET /appointments
   def index
@@ -37,6 +39,16 @@ class AppointmentsController < ApplicationController
   def destroy
     @appointment.destroy
   end
+
+  # PUT /services/1/appointments/2
+  def add-service
+    @appointment = Appointment.find(params[:id])
+    @service = Service.find(params[:service_id])
+
+    @appointment.service << @service
+    render json: @appointment, include: :services
+  end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
