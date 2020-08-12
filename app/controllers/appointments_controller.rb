@@ -10,7 +10,7 @@ class AppointmentsController < ApplicationController
 
   # GET /appointments/1
   def show
-    render json: @appointment
+    render json: @appointment, include: :services
   end
 
   # POST /appointments
@@ -37,6 +37,16 @@ class AppointmentsController < ApplicationController
   def destroy
     @appointment.destroy
   end
+
+  # # PUT /services/1/appointment/2
+  # def add_service
+  #   @appointment = Appointment.find(params[:id])
+  #   @service = Service.find(params[:service_id])
+
+  #   @appointment.service << @service
+
+  #   render json: @appointment, include: :services
+  # end
 
   private
     # Use callbacks to share common setup or constraints between actions.
