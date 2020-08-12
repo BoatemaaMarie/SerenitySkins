@@ -1,3 +1,3 @@
 class Service < ApplicationRecord
-  has_and_belogns_to_many :appointments
+  has_many :appoitments
 end
