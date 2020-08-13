@@ -1,31 +1,31 @@
 import api from './api-helper';
 
-export const readAllFoods = async () => {
-  const resp = await api.get('/foods');
+export const readAllAppointments = async () => {
+  const resp = await api.get('/appointments');
   return resp.data;
 }
 
-export const readOneFood = async (id) => {
-  const resp = await api.get(`/foods/${id}`);
+export const readOneAppointment = async (id) => {
+  const resp = await api.get(`/appointments/${id}`);
   return resp.data;
 }
 
-export const postFood = async (foodData) => {
-  const resp = await api.post('/foods', { food: foodData });
+export const postAppointment = async (appointmentData) => {
+  const resp = await api.post('/appointments', { appointment: appointmentData });
   return resp.data;
 }
 
-export const putFood = async (id, foodData) => {
-  const resp = await api.put(`/foods/${id}`, { food: foodData });
+export const putAppointment = async (id, appointmentData) => {
+  const resp = await api.put(`/appointments/${id}`, { appointment: appointmentData });
   return resp.data;
 }
 
-export const destroyFood = async (id) => {
-  const resp = await api.delete(`/foods/${id}`);
+export const destroyAppointment = async (id) => {
+  const resp = await api.delete(`/appointments/${id}`);
   return resp;
 }
 
-export const addFlavor = async(flavorId, foodId) => {
-  const resp = await api.put(`/flavors/${flavorId}/foods/${foodId}`);
+export const addService = async(flavorId, appointmentId) => {
+  const resp = await api.put(`/flavors/${flavorId}/appointments/${appointmentId}`);
   return resp.data;
 }

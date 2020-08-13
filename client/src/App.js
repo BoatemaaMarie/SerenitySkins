@@ -1,12 +1,17 @@
 import React from 'react';
-
+import Login from './screens/Login/Login'
 import './App.css';
+import WelcomePage from './screens/WelcomePage/WelcomePage';
+import Services from './screens/Services/Services'
 
-function App() {
+export default function App(props) {
   return (
-    <div className="App" />
-      
+    <div>
+      {/* <Login /> */}
+      {/* <WelcomePage/> */}
+      <Services />
+      </div>
   );
 }
 
-export default App;
+
