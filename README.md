@@ -40,37 +40,39 @@ _The **Serenity Skins Spa** This website allows users to sign up and manage appo
 #### Wireframes
 
 
-https://wireframe.cc/PUwm75
-
 - Desktop Landing
 
-https://wireframe.cc/6OmKy2
+https://wireframe.cc/PUwm75
 
 - Desktop Hero
 
-https://wireframe.cc/lBTUEh
+https://wireframe.cc/6OmKy2
 
 - Resource Index
 
-https://wireframe.cc/OqJUXd
+https://wireframe.cc/lBTUEh
 
 - Resource Show
 
-https://wireframe.cc/uEBxCX
+https://wireframe.cc/OqJUXd
 
 - Create Appointment
 
-https://wireframe.cc/yOq7cL
+https://wireframe.cc/uEBxCX
 
 - Update and Delete Appointment
 
-https://wireframe.cc/F4i2Oq
+https://wireframe.cc/yOq7cL
 
 - Tablet Resource Index
 
-https://wireframe.cc/qF656C
+https://wireframe.cc/F4i2Oq
 
 - Mobile Resource Index
+
+https://wireframe.cc/qF656C
+
+
 
 #### Component Tree
 
