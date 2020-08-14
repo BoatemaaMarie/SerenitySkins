@@ -1862,3 +1862,706 @@ Processing by ServicesController#index as HTML
 Completed 200 OK in 128ms (Views: 121.5ms | ActiveRecord: 1.9ms | Allocations: 1500)
 
 
+Started GET "/" for ::1 at 2020-08-14 12:09:20 -0400
+  [1m[35m (5.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/kellyappiah/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/kellyappiah/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 14.4ms | Allocations: 309)
+Completed 200 OK in 29ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 1619)
+
+
+Started GET "/" for ::1 at 2020-08-14 12:10:07 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/kellyappiah/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/kellyappiah/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 29.2ms | Allocations: 185)
+Completed 200 OK in 35ms (Views: 31.9ms | ActiveRecord: 0.0ms | Allocations: 748)
+
+
+Started GET "/services" for ::1 at 2020-08-14 12:12:02 -0400
+Processing by ServicesController#index as HTML
+  [1m[36mService Load (100.9ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:8:in `index'
+Completed 200 OK in 504ms (Views: 96.0ms | ActiveRecord: 317.1ms | Allocations: 8499)
+
+
+Started GET "/services" for ::1 at 2020-08-14 12:22:36 -0400
+Processing by ServicesController#index as HTML
+  [1m[36mService Load (43.0ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:8:in `index'
+Completed 200 OK in 121ms (Views: 76.0ms | ActiveRecord: 43.0ms | Allocations: 1577)
+
+
+Started GET "/appointments/undefined" for ::1 at 2020-08-14 14:05:06 -0400
+Processing by AppointmentsController#show as HTML
+  Parameters: {"id"=>"undefined"}
+  [1m[36mAppointment Load (47.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:56:in `set_appointment'
+Completed 404 Not Found in 272ms (ActiveRecord: 110.6ms | Allocations: 2745)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Appointment with 'id'=undefined):
+  
+app/controllers/appointments_controller.rb:56:in `set_appointment'
+Started GET "/appointments/undefined" for ::1 at 2020-08-14 14:05:11 -0400
+Processing by AppointmentsController#show as HTML
+  Parameters: {"id"=>"undefined"}
+  [1m[36mAppointment Load (17.2ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:56:in `set_appointment'
+Completed 404 Not Found in 26ms (ActiveRecord: 17.2ms | Allocations: 705)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Appointment with 'id'=undefined):
+  
+app/controllers/appointments_controller.rb:56:in `set_appointment'
+Started GET "/appointments/undefined" for ::1 at 2020-08-14 14:05:15 -0400
+Processing by AppointmentsController#show as HTML
+  Parameters: {"id"=>"undefined"}
+  [1m[36mAppointment Load (2.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:56:in `set_appointment'
+Completed 404 Not Found in 8ms (ActiveRecord: 2.4ms | Allocations: 674)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Appointment with 'id'=undefined):
+  
+app/controllers/appointments_controller.rb:56:in `set_appointment'
+Started GET "/appointments/undefined" for 127.0.0.1 at 2020-08-14 14:05:45 -0400
+Processing by AppointmentsController#show as HTML
+  Parameters: {"id"=>"undefined"}
+  [1m[36mAppointment Load (1.7ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:56:in `set_appointment'
+Completed 404 Not Found in 4ms (ActiveRecord: 1.7ms | Allocations: 662)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Appointment with 'id'=undefined):
+  
+app/controllers/appointments_controller.rb:56:in `set_appointment'
+Started GET "/appointments/undefined" for 127.0.0.1 at 2020-08-14 14:05:47 -0400
+Processing by AppointmentsController#show as HTML
+  Parameters: {"id"=>"undefined"}
+  [1m[36mAppointment Load (3.8ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:56:in `set_appointment'
+Completed 404 Not Found in 17ms (ActiveRecord: 3.8ms | Allocations: 662)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Appointment with 'id'=undefined):
+  
+app/controllers/appointments_controller.rb:56:in `set_appointment'
+Started GET "/appointments/undefined" for 127.0.0.1 at 2020-08-14 14:07:17 -0400
+Processing by AppointmentsController#show as HTML
+  Parameters: {"id"=>"undefined"}
+  [1m[36mAppointment Load (1.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:56:in `set_appointment'
+Completed 404 Not Found in 18ms (ActiveRecord: 1.3ms | Allocations: 661)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Appointment with 'id'=undefined):
+  
+app/controllers/appointments_controller.rb:56:in `set_appointment'
+Started GET "/appointments/undefined" for 127.0.0.1 at 2020-08-14 14:08:45 -0400
+Processing by AppointmentsController#show as HTML
+  Parameters: {"id"=>"undefined"}
+  [1m[36mAppointment Load (20.9ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:56:in `set_appointment'
+Completed 404 Not Found in 24ms (ActiveRecord: 20.9ms | Allocations: 661)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Appointment with 'id'=undefined):
+  
+app/controllers/appointments_controller.rb:56:in `set_appointment'
+Started GET "/appointments/undefined" for 127.0.0.1 at 2020-08-14 14:08:50 -0400
+Processing by AppointmentsController#show as HTML
+  Parameters: {"id"=>"undefined"}
+  [1m[36mAppointment Load (1.6ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:56:in `set_appointment'
+Completed 404 Not Found in 4ms (ActiveRecord: 1.6ms | Allocations: 661)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Appointment with 'id'=undefined):
+  
+app/controllers/appointments_controller.rb:56:in `set_appointment'
+Started GET "/appointments/undefined" for 127.0.0.1 at 2020-08-14 14:09:33 -0400
+Processing by AppointmentsController#show as HTML
+  Parameters: {"id"=>"undefined"}
+  [1m[36mAppointment Load (1.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:56:in `set_appointment'
+Completed 404 Not Found in 3ms (ActiveRecord: 1.3ms | Allocations: 661)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Appointment with 'id'=undefined):
+  
+app/controllers/appointments_controller.rb:56:in `set_appointment'
+Started GET "/appointments/undefined" for 127.0.0.1 at 2020-08-14 14:09:47 -0400
+Processing by AppointmentsController#show as HTML
+  Parameters: {"id"=>"undefined"}
+  [1m[36mAppointment Load (7.2ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:56:in `set_appointment'
+Completed 404 Not Found in 15ms (ActiveRecord: 7.2ms | Allocations: 661)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Appointment with 'id'=undefined):
+  
+app/controllers/appointments_controller.rb:56:in `set_appointment'
+Started GET "/appointments/undefined" for 127.0.0.1 at 2020-08-14 14:09:58 -0400
+Processing by AppointmentsController#show as HTML
+  Parameters: {"id"=>"undefined"}
+  [1m[36mAppointment Load (4.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:56:in `set_appointment'
+Completed 404 Not Found in 7ms (ActiveRecord: 4.4ms | Allocations: 661)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Appointment with 'id'=undefined):
+  
+app/controllers/appointments_controller.rb:56:in `set_appointment'
+Started GET "/appointments/undefined" for 127.0.0.1 at 2020-08-14 14:10:07 -0400
+Processing by AppointmentsController#show as HTML
+  Parameters: {"id"=>"undefined"}
+  [1m[36mAppointment Load (13.9ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:56:in `set_appointment'
+Completed 404 Not Found in 16ms (ActiveRecord: 13.9ms | Allocations: 661)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Appointment with 'id'=undefined):
+  
+app/controllers/appointments_controller.rb:56:in `set_appointment'
+Started GET "/appointments/undefined" for 127.0.0.1 at 2020-08-14 14:10:15 -0400
+Processing by AppointmentsController#show as HTML
+  Parameters: {"id"=>"undefined"}
+  [1m[36mAppointment Load (0.8ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:56:in `set_appointment'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.8ms | Allocations: 661)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Appointment with 'id'=undefined):
+  
+app/controllers/appointments_controller.rb:56:in `set_appointment'
+Started GET "/appointments/undefined" for 127.0.0.1 at 2020-08-14 14:10:17 -0400
+Processing by AppointmentsController#show as HTML
+  Parameters: {"id"=>"undefined"}
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:56:in `set_appointment'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.4ms | Allocations: 661)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Appointment with 'id'=undefined):
+  
+app/controllers/appointments_controller.rb:56:in `set_appointment'
+Started GET "/appointments/undefined" for 127.0.0.1 at 2020-08-14 14:10:31 -0400
+Processing by AppointmentsController#show as HTML
+  Parameters: {"id"=>"undefined"}
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:56:in `set_appointment'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.4ms | Allocations: 661)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Appointment with 'id'=undefined):
+  
+app/controllers/appointments_controller.rb:56:in `set_appointment'
+Started GET "/appointments/undefined" for 127.0.0.1 at 2020-08-14 14:13:28 -0400
+Processing by AppointmentsController#show as HTML
+  Parameters: {"id"=>"undefined"}
+  [1m[36mAppointment Load (1.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:56:in `set_appointment'
+Completed 404 Not Found in 27ms (ActiveRecord: 1.3ms | Allocations: 661)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Appointment with 'id'=undefined):
+  
+app/controllers/appointments_controller.rb:56:in `set_appointment'
+Started GET "/appointments/undefined" for 127.0.0.1 at 2020-08-14 14:13:42 -0400
+Processing by AppointmentsController#show as HTML
+  Parameters: {"id"=>"undefined"}
+  [1m[36mAppointment Load (6.8ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:56:in `set_appointment'
+Completed 404 Not Found in 10ms (ActiveRecord: 6.8ms | Allocations: 661)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Appointment with 'id'=undefined):
+  
+app/controllers/appointments_controller.rb:56:in `set_appointment'
+Started GET "/appointments/undefined" for 127.0.0.1 at 2020-08-14 14:13:48 -0400
+Processing by AppointmentsController#show as HTML
+  Parameters: {"id"=>"undefined"}
+  [1m[36mAppointment Load (0.6ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:56:in `set_appointment'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.6ms | Allocations: 661)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Appointment with 'id'=undefined):
+  
+app/controllers/appointments_controller.rb:56:in `set_appointment'
+Started GET "/appointments/undefined" for 127.0.0.1 at 2020-08-14 14:14:35 -0400
+Processing by AppointmentsController#show as HTML
+  Parameters: {"id"=>"undefined"}
+  [1m[36mAppointment Load (8.2ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:56:in `set_appointment'
+Completed 404 Not Found in 19ms (ActiveRecord: 8.2ms | Allocations: 661)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Appointment with 'id'=undefined):
+  
+app/controllers/appointments_controller.rb:56:in `set_appointment'
+Started GET "/appointments/undefined" for 127.0.0.1 at 2020-08-14 14:15:28 -0400
+Processing by AppointmentsController#show as HTML
+  Parameters: {"id"=>"undefined"}
+  [1m[36mAppointment Load (1.0ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:56:in `set_appointment'
+Completed 404 Not Found in 16ms (ActiveRecord: 1.0ms | Allocations: 661)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Appointment with 'id'=undefined):
+  
+app/controllers/appointments_controller.rb:56:in `set_appointment'
+Started GET "/services/undefined" for 127.0.0.1 at 2020-08-14 14:15:36 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/services/undefined"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/services/undefined" for 127.0.0.1 at 2020-08-14 14:15:40 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/services/undefined"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/services/undefined" for 127.0.0.1 at 2020-08-14 14:15:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/services/undefined"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/services/undefined" for 127.0.0.1 at 2020-08-14 14:16:08 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/services/undefined"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-08-14 14:16:15 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/kellyappiah/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/kellyappiah/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 19.5ms | Allocations: 7)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.0ms | Allocations: 267)
+
+
+Started GET "/auth/login" for 127.0.0.1 at 2020-08-14 14:16:19 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/auth/login"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/appointment" for 127.0.0.1 at 2020-08-14 14:16:20 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/appointment"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/appointment" for 127.0.0.1 at 2020-08-14 14:16:21 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/appointment"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/appointments" for 127.0.0.1 at 2020-08-14 14:16:27 -0400
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (1.6ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:10:in `index'
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 1.6ms | Allocations: 889)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2020-08-14 14:16:27 -0400
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (1.8ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:10:in `index'
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 1.8ms | Allocations: 861)
+
+
+Started GET "/appointment" for 127.0.0.1 at 2020-08-14 14:16:31 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/appointment"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-08-14 14:16:33 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/kellyappiah/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/kellyappiah/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.6ms | Allocations: 7)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 263)
+
+
+Started GET "/services" for 127.0.0.1 at 2020-08-14 14:16:34 -0400
+Processing by ServicesController#index as HTML
+  [1m[36mService Load (48.3ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:8:in `index'
+Completed 200 OK in 57ms (Views: 8.6ms | ActiveRecord: 48.3ms | Allocations: 1504)
+
+
+Started GET "/servicesces" for 127.0.0.1 at 2020-08-14 14:16:35 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/servicesces"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/servicesces" for 127.0.0.1 at 2020-08-14 14:16:41 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/servicesces"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/services" for 127.0.0.1 at 2020-08-14 14:16:42 -0400
+Processing by ServicesController#index as HTML
+  [1m[36mService Load (4.7ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 3.6ms | ActiveRecord: 4.7ms | Allocations: 1501)
+
+
+Started GET "/services" for 127.0.0.1 at 2020-08-14 14:16:42 -0400
+Processing by ServicesController#index as HTML
+  [1m[36mService Load (1.3ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 1.3ms | Allocations: 1500)
+
+
+Started GET "/services/13" for 127.0.0.1 at 2020-08-14 14:16:48 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/services/13"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/services/13" for 127.0.0.1 at 2020-08-14 14:16:54 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/services/13"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/services/" for 127.0.0.1 at 2020-08-14 14:16:54 -0400
+Processing by ServicesController#index as HTML
+  [1m[36mService Load (12.7ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:8:in `index'
+Completed 200 OK in 28ms (Views: 11.5ms | ActiveRecord: 12.7ms | Allocations: 1499)
+
+
+Started GET "/services/13" for 127.0.0.1 at 2020-08-14 14:17:00 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/services/13"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/services/14" for 127.0.0.1 at 2020-08-14 14:17:01 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/services/14"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'

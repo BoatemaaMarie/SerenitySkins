@@ -11,8 +11,8 @@ export default function App(props) {
     <div>
       {/* <Login /> */}
       {/* <WelcomePage/> */}
-      <Services />
-      {/* <ShowAppointment /> */}
+      {/* <Services /> */}
+      <ShowAppointment />
       {/* <CreateAppointment/> */}
       </div>
   );
