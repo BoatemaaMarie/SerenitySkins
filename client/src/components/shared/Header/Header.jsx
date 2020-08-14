@@ -6,14 +6,16 @@ const Header = () => {
   return (
     <header>
       <div className='header'>
-        <h1>Serenity  Skin Spa</h1>
-        <nav>
-          <Link>Home</Link>
-          <Link>Services</Link>
-          <Link>Appointments</Link>
-          <p>Hello, User</p>
+      <Link to=""><h1 className="store-name">Serenity  Skin Spa</h1></Link>
+        <nav className="nav-links">
+        
+          <Link  className="nav-links" to="">Home</Link>
+          <Link  className="nav-links" to="">Services</Link>
+          <Link  className="nav-links" to="">Appointments</Link>
+          <Link  className="nav-links">Hello, User</Link>
+        
         </nav>
-        {/* <img src={`${ghostLogo}`} className='header-ghost' /><Link style={{ textDecoration: 'none' }} to={`/subscriptions`}><h1 className= 'header-subbusters'>SubBusters</h1></Link> */}
+
       </div>
     </header>
   )
