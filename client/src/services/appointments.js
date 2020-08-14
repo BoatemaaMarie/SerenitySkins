@@ -25,7 +25,7 @@ export const destroyAppointment = async (id) => {
   return resp;
 }
 
-export const addService = async(flavorId, appointmentId) => {
-  const resp = await api.put(`/flavors/${flavorId}/appointments/${appointmentId}`);
+export const addService = async(serviceId, appointmentId) => {
+  const resp = await api.put(`/services/${serviceId}/appointments/${appointmentId}`);
   return resp.data;
 }

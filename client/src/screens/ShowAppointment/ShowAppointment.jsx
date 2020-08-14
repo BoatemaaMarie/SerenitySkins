@@ -1,18 +1,19 @@
 import React, { useState, useEffect } from 'react'
 import { readOneAppointment, addService } from '../../services/appointments'
+import Layout from '../../components/shared/Layout/Layout';
 
 export default function ShowAppointment(props) {
   const [appointment, setAppointment] = useState(null);
   const [serviceId, setServiceId] = useState(null);
 
-  // useEffect(() => {
-  //   getAppointment()
-  // }, [])
+  useEffect(() => {
+    getAppointment()
+  }, [])
 
-  // const getAppointment= async () => {
-  //   const showAppointment = await readOneAppointment(props.match.params.id)
-  //   setAppointment(showAppointment)
-  // }
+  const getAppointment= async () => {
+    const showAppointment = await readOneAppointment(props.match.params.id)
+    setAppointment(showAppointment)
+  }
 
   const handleChange = (e) => {
     const { value } = e.target;
@@ -27,7 +28,15 @@ export default function ShowAppointment(props) {
 
   return (
     <div>
-      {
+      <Layout>
+        <img></img>
+      </Layout>  
+
+
+
+
+{/* 
+       {
         appointment && (
           <>
             <h3>{appointment.name}</h3>
@@ -46,7 +55,7 @@ export default function ShowAppointment(props) {
             </form>
           </>
         )
-      }
+      }  */}
     </div>
   )
 }

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import { loginUser } from '../../services/auth';
 import Layout from '../../components/shared/Layout/Layout'
+import './Login.css' 
 
 export default function Login(props) {
   const [formData, setFormData] = useState({
@@ -27,19 +28,23 @@ export default function Login(props) {
   return (
     <>
       <Layout>
-    <form onSubmit={handleSubmit}>
-      <h1>Hey Girl, Welcome to Serenity</h1>
-      <h3>LOGIN HERE</h3>
-      <label>
+        <div className="body-background">
+
+          <form className="white-out" onSubmit={handleSubmit}>
+            <div className="centered-content">
+
+      <h1 className="center">Hey Girl, Welcome to Serenity</h1>
+      <h3 className="login">LOGIN HERE</h3>
+      <label className="username">
         Username:
         <input
           type="text"
           name="username"
           value={formData.username}
           onChange={handleChange}
-        />
+          />
       </label>
-      <label>
+      <label className="password">
         Password:
         <input
           type="password"
@@ -47,10 +52,14 @@ export default function Login(props) {
           value={formData.password}
           onChange={handleChange}
           />
-          <button>Submit</button>
+          <button className="submit" onClick={handleSubmit}>Submit</button>
       </label>
-      <Link to='/register'>Not a memember? Register Here</Link>
-        </form>
+            <Link to='/register' className="register">Not a memember? Register Here</Link>
+            
+          </div>
+          </form>
+          
+          </div>
       </Layout>
       </>
   )
