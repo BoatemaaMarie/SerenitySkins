@@ -5,6 +5,7 @@ import WelcomePage from './screens/WelcomePage/WelcomePage';
 import Services from './screens/Services/Services'
 import ShowAppointment from './screens/ShowAppointment/ShowAppointment'
 import CreateAppointment from './screens/CreateAppointment/CreateAppointment';
+import Calendar from './components/Calendar/Calendar'
 
 export default function App(props) {
   return (
@@ -12,8 +13,9 @@ export default function App(props) {
       {/* <Login /> */}
       {/* <WelcomePage/> */}
       {/* <Services /> */}
-      <ShowAppointment />
-      {/* <CreateAppointment/> */}
+      {/* <ShowAppointment /> */}
+      <CreateAppointment/>
+      {/* <Calendar/> */}
       </div>
   );
 }
