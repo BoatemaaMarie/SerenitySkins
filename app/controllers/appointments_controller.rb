@@ -17,7 +17,10 @@ class AppointmentsController < ApplicationController
 
   # POST /appointments
   def create
+    @service = Service.find(params[:service_id])
     @appointment = Appointment.new(appointment_params)
+    @appointment.user = @current_user
+    @appointment.service = @service
 
     if @appointment.save
       render json: @appointment, status: :created, location: @appointment

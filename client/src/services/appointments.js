@@ -10,8 +10,8 @@ export const readOneAppointment = async (id) => {
   return resp.data;
 }
 
-export const postAppointment = async (appointmentData) => {
-  const resp = await api.post('/appointments', { appointment: appointmentData });
+export const postAppointment = async (serviceId, appointmentData) => {
+  const resp = await api.post(`/services/${serviceId}/appointments`, { appointment: appointmentData });
   return resp.data;
 }
 
