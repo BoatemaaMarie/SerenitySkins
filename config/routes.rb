@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  resources :services, only: :index
-  resources :appointments
+  resources :services, only: [:index, :show] do 
+    resources :appointments, only: [:create]
+  end
+  resources :appointments, only: [:show, :update, :destroy, :index]
   resources :users, only: :create
   post '/auth/login', to: 'authentication#login'
   get '/auth/verify', to: 'authentication#verify'

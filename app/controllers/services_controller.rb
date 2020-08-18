@@ -8,10 +8,10 @@ class ServicesController < ApplicationController
     render json: @services
   end
 
-  # # GET /services/1
-  # def show
-  #   render json: @service
-  # end
+  # GET /services/1
+  def show
+    render json: @service
+  end
 
   # # POST /services
   # def create
@@ -38,11 +38,11 @@ class ServicesController < ApplicationController
   #   @service.destroy
   # end
 
-  # private
-  #   # Use callbacks to share common setup or constraints between actions.
-  #   def set_service
-  #     @service = Service.find(params[:id])
-  #   end
+  private
+    # Use callbacks to share common setup or constraints between actions.
+    def set_service
+      @service = Service.find(params[:id])
+    end
 
   #   # Only allow a trusted parameter "white list" through.
   #   def service_params
