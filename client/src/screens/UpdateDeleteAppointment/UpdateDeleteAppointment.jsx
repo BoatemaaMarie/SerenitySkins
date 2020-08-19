@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { putAppointment, destroyAppointment } from '../../services/appointments'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+
+
 
 export default function UpdateDeleteAppointment(props) {
   const [formData, setFormData] = useState({
@@ -8,6 +10,7 @@ export default function UpdateDeleteAppointment(props) {
     date: "",
     time: ""
   })
+ 
 
   useEffect(() => {
     defaultFormData()
@@ -60,7 +63,7 @@ return appointment.id !== id
           <button>Update</button>
       </form>
       
-      {/* redirect to appointments page */}
+
 <button onClick={()=>handleDelete(props.match.params.id)}>Delete Appointment</button>
     </>
 )

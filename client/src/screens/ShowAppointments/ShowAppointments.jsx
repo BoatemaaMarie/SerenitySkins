@@ -1,23 +1,26 @@
 import React, { useState, useEffect } from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import './ShowAppointments.css'
 
 
 export default function ShowAppointments(props) {
- 
+
 
   return (
-        <div>
-        <h1>My Appointments</h1>
+    <div className="appointment-container">
+      <h1 className="title-appointment">My Appointments</h1>
 
       {props.appointments.map((appointment) => (
         <>
-          <p>{appointment.name}</p>
-          <p>{appointment.date}</p>
-          <p>{appointment.time}</p>
-          <Link to={`/updateanddelete/${appointment.id}`} ><button>Update</button></Link>
-          </>
-        ))}
+          <div classname="appointment-list">
+            <p classname="">{appointment.name}</p>
+            <p>{appointment.date}</p>
+            <p>{appointment.time}</p>
+            <Link to={`/updateanddelete/${appointment.id}`} ><button>Update</button></Link>
+          </div>
+        </>
+      ))}
 
-        </div>
+    </div>
   )
-}
+} 
