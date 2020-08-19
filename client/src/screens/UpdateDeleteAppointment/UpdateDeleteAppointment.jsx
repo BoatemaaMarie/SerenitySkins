@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { putAppointment, destroyAppointment } from '../../services/appointments'
 import { Link } from 'react-router-dom'
-
+import './UpdateDeleteAppointment.css'
 
 
 export default function UpdateDeleteAppointment(props) {
@@ -55,16 +55,23 @@ return appointment.id !== id
 
   return (
     <>
+      <div className="update-container-div">
+
       <form onSubmit={handleSubmit}>
-        <p>select date and time</p>
-        <input name="name" type="text" value={formData.name} onChange={handleChange}/>
+        <p className="update-title">Something came up? No worries select a differnet date and time:</p>
+          <div>
+            
+          <input name="name" type="text" value={formData.name} onChange={handleChange} />
           <input name="date" type="date" value={formData.date} onChange={handleChange}/>
           <input name="time" type="time" value={formData.time} onChange={handleChange}/>
-          <button>Update</button>
+            <button onClick={handleSubmit}>Update</button>
+        </div>
       </form>
       
-
-<button onClick={()=>handleDelete(props.match.params.id)}>Delete Appointment</button>
+      </div>
+      <div className="delete-button">
+<Link style={{ textDecoration: 'none', color: '#e16162', marginTop:'50px' }} classname="delete-link" onClick={()=>handleDelete(props.match.params.id)}>Delete Appointment</Link>
+</div>
     </>
 )
 }

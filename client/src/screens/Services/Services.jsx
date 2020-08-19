@@ -18,7 +18,7 @@ export default function Services(props) {
                 <p className="service-name">{service.name}</p>
 
 
-                <Link to={`/appointment/${service.id}/new`}> <button className="create-button">Create Appointment</button></Link>
+                <Link to={`/appointment/${service.id}/new`}> <button className="create-button">View Details</button></Link>
               </div>
             </div>
           </>

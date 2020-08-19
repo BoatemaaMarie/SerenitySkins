@@ -1,0 +1,23 @@
+.update-container-div{
+  margin-top: 300px;
+font-weight: bold;
+display: flex;
+justify-content: center;
+
+}
+
+.delete-button{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+
+}
+
+.update-title{
+  margin-bottom: 50px;
+
+}
+
+.delete-link{
+  margin-top: 50px;
+}
