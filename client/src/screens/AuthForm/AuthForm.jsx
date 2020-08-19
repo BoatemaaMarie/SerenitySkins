@@ -26,9 +26,9 @@ export default function AuthForm(props) {
 
   return (
     <>
-
       <div className="body-background">
-
+        <div className="center-login">
+          
         <form className="white-out" onSubmit={handleSubmit}>
           <div className="centered-content">
 
@@ -41,7 +41,7 @@ export default function AuthForm(props) {
                 name="username"
                 value={formData.username}
                 onChange={handleChange}
-              />
+                />
             </label>
             <label className="password">
               Password:
@@ -50,7 +50,7 @@ export default function AuthForm(props) {
                 name="password"
                 value={formData.password}
                 onChange={handleChange}
-              />
+                />
               <Link to='/WelcomePage'>
                 <button className="submit" onClick={handleSubmit}>Submit</button>
               </Link>
@@ -62,6 +62,7 @@ export default function AuthForm(props) {
 
           </div>
         </form>
+            </div>
 
       </div>
 

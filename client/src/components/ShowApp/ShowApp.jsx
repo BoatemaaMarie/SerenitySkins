@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import {readOneService} from '../../services/services'
+import { readOneService } from '../../services/services'
+import './ShowApp.css'
 
 export default function ShowApp(props) {
   const [service, setService] = useState(null)
@@ -17,12 +18,13 @@ export default function ShowApp(props) {
     <div>
       {service &&
 
-        <div>
+        <div className="showapp-css">
           <img src={service.img_url} alt={service.name} />
 
-          <p>{service.name}</p>
-          <p>{service.price}</p>
-          <p>{service.description}</p>
+          <p className="name"> {service.name}</p>
+        <p>{service.price}</p>
+        <p>{service.duration}</p>
+          <p className="description" >{service.description}</p>
         </div>
       }
     </div>
