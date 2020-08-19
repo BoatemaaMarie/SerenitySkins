@@ -1,0 +1,43 @@
+.title{
+  display: block;
+  text-align:center;
+  padding-top: 60px;
+  padding-bottom:50px;
+}
+
+.grid{
+  display: flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+  margin: 30px;
+
+}
+
+.attributes{
+  width: 400px;
+  height: 350px;;
+}
+
+.service-name{
+/* text-align: center; */
+}
+
+.create-button{
+/* align-items: center; */
+}
+
+.button-name-container{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-space{
+  height: 100px;
+}

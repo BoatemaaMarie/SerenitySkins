@@ -1,0 +1,20 @@
+.appointment-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-appointment{
+  margin-top: 80px;
+  margin-bottom:60px;
+}
+
+.appointment-list{
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+.bold{
+  font-weight: bold;
+}
