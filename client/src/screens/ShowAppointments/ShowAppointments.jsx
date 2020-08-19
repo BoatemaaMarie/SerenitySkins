@@ -7,7 +7,7 @@ export default function ShowAppointments(props) {
 
   return (
         <div>
-        <h1>Services</h1>
+        <h1>My Appointments</h1>
 
       {props.appointments.map((appointment) => (
         <>

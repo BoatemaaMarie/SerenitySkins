@@ -1,6 +1,7 @@
-import React, {useState, useEffect}  from 'react'
+import React, { useState, useEffect } from 'react'
 import { postAppointment } from '../../services/appointments'
-import {readOneService} from '../../services/services'
+import { readOneService } from '../../services/services'
+import './CreateAppForm.css'
 
 export default function CreateAppForm(props) {
   const [formData, setFormData] = useState({
@@ -18,12 +19,12 @@ export default function CreateAppForm(props) {
 
   const getService = async () => {
     const oneService = await readOneService(props.match.params.id)
-    setFormData({name: oneService.name})
+    setFormData({ name: oneService.name })
   }
 
   const handleChange = (e) => {
     const { name, value } = e.target
-    setFormData({...formData, [name]:value})
+    setFormData({ ...formData, [name]: value })
   }
 
   const handleSubmit = async (e) => {
@@ -35,14 +36,17 @@ export default function CreateAppForm(props) {
 
   return (
     <div>
-       <form onSubmit={handleSubmit}>
-        <p>select date and time</p>
-        <input name="name" type="text" value={formData.name} onChange={handleChange}/>
-          <input name="date" type="date" value={formData.date} onChange={handleChange}/>
-          <input name="time" type="time" value={formData.time} onChange={handleChange}/>
-          <button>Book Now</button>
-        </form>
+      <form onSubmit={handleSubmit}>
+        <p className="center-select">Select date and time:</p>
 
+        <div className="create-form">
+          <input className="input" name="name" type="text" value={formData.name} onChange={handleChange} />
+          <input className="input" name="date" type="date" value={formData.date} onChange={handleChange} />
+          <input className="input" name="time" type="time" value={formData.time} onChange={handleChange} />
+          <button className="book-now">Book Now</button>
+        </div>
+      </form>
+      <div classname="space"></div>
     </div>
   )
 }

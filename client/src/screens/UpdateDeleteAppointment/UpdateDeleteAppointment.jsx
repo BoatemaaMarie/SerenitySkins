@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { putAppointment } from '../../services/appointments'
+import { putAppointment, destroyAppointment } from '../../services/appointments'
 import {Link} from 'react-router-dom'
 
 export default function UpdateDeleteAppointment(props) {
@@ -27,6 +27,17 @@ export default function UpdateDeleteAppointment(props) {
     setFormData({...formData, [name]:value})
   }
 
+  const handleDelete = async (id) => {
+    await destroyAppointment(id)
+    props.setAppointments(
+      props.appointments.map((appointment) => {
+return appointment.id !== id
+      })
+    )
+    props.history.push("/showappointments")
+  }
+
+
   const handleSubmit = async (e) => {
     e.preventDefault()
     const { id } = props.match.params
@@ -50,8 +61,7 @@ export default function UpdateDeleteAppointment(props) {
       </form>
       
       {/* redirect to appointments page */}
-<Link>Delete Appointment</Link>
+<button onClick={()=>handleDelete(props.match.params.id)}>Delete Appointment</button>
     </>
 )
-
 }

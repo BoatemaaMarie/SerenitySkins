@@ -1,0 +1,14 @@
+.name{
+  font-weight: bolder;
+}
+
+.description{
+  width: 800px;
+}
+
+.showapp-css{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
