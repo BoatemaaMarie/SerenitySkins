@@ -21,9 +21,9 @@ export default function ShowApp(props) {
         <div className="showapp-css">
           <img src={service.img_url} alt={service.name} />
 
-          <p className="name"> {service.name}</p>
-        <p>{service.price}</p>
-        <p>{service.duration}</p>
+          <p className="name">Treatment: {service.name}</p>
+        <p>Price: {service.price}</p>
+        <p>Treatment Duration: {service.duration}</p>
           <p className="description" >{service.description}</p>
         </div>
       }

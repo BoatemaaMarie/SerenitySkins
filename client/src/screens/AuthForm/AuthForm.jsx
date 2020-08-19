@@ -51,9 +51,12 @@ export default function AuthForm(props) {
                 value={formData.password}
                 onChange={handleChange}
                 />
+                <div className="login-submit">
+
               <Link to='/WelcomePage'>
                 <button className="submit" onClick={handleSubmit}>Submit</button>
               </Link>
+                </div>
             </label>
 
             {props.title === "Login" &&
